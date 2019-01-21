@@ -10,3 +10,10 @@ rtm.on(`message`, async (message) => {
   const response = await GetTime.run(text);
   rtm.sendMessage(`Current time at ${text}: ${response.time}.`, slackChannelId);
 });
+
+const Koa = require(`koa`);
+const app = new Koa();
+app.use((ctx) => {
+  ctx.body = `ok`;
+});
+app.listen(80);
