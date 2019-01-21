@@ -17,4 +17,4 @@ const app = new Koa();
 app.use((ctx) => {
   ctx.body = `ok`;
 });
-https.createServer(app.callback());
+https.createServer(app.callback()).listen(443);
