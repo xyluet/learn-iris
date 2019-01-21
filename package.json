@@ -1,0 +1,29 @@
+{
+  "name": "learn-iris",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon index.js --quiet",
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^4.8.0",
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0",
+    "moment": "^2.23.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9"
+  }
+}
