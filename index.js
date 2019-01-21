@@ -12,8 +12,9 @@ rtm.on(`message`, async (message) => {
 });
 
 const Koa = require(`koa`);
+const https = require(`https`);
 const app = new Koa();
 app.use((ctx) => {
   ctx.body = `ok`;
 });
-app.listen(80);
+https.createServer(app.callback());
